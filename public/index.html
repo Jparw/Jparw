@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta page-alert="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>jparw.gg</title>
 
 		<!-- Google fonts "inter" import -->
@@ -23,11 +23,11 @@
 
       <!------- Alert Start ------->
       <div class="md:pt-5">
-        <div id="page-alert" class="px-4 py-3 font-light text-gray-400 bg-gray-200 text-base" role="alert">
+        <div id="page-alert" class="px-4 py-3 font-light text-gray-400 bg-gray-200 lg:text-base text-base md:text-base" role="alert">
           <div class="md:ml-28 flex items-center">
             <i class="mr-2 fas fa-exclamation-circle"></i>
-            <p class="text-center">Website is currently not functional. View the ropo <a class="font-bold underline hover:text-gray-500 transition-colors" href="#">here</a></p>
-            <i onclick="myFunction()" role="button" class="fas fa-times absolute right-0 mr-5 md:mr-28"></i>	
+            <p class="text-center">Website is currently not functional. View the ropo <a class="font-bold underline hover:text-gray-500 transition-colors" href="https://github.com/Jparw/Jparw" target="_blank">here</a></p>
+            <i onclick="myFunction()" role="button" class="fas fa-times absolute right-0 mr-5 md:mr-28 hover:text-gray-500 transition-colors"></i>	
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
          <div class=" ">
           <h1 class=" text-gray-500 text-4xl font-bold pb-1">Jack Willars</h1>
           <h2 class="text-gray-300 text-lg font-semibold">Student & Front-End Developer</h2>
-          <p class="text-gray-400 font-normal text-lg mt-9 md:mt-12 md:w-1/2">Aspiring Entrepreneur - Building things that I want to use. Currently working towards a level 3 diploma in IT and learning <a class="bg-gray-200  hover:text-gray-500 transition-all p-1 px-2 rounded-full hover:underline" href="https://vuejs.org/" target="_blank">vue.js</a> in my free time.</p>
+          <p class="text-gray-400 font-normal text-lg mt-9 md:mt-12 md:w-4/5">Aspiring Entrepreneur - Building things that I want to use. Currently working towards a level 3 diploma in IT and learning <a class="bg-gray-200  hover:text-gray-500 transition-all p-1 px-2 rounded-full hover:underline" href="https://vuejs.org/" target="_blank">vue.js</a> in my free time.</p>
           <div class="block md:mt-12 mt-5 transition-all">
             <a href="https://twitter.com/jparw3" target="_blank" class="px-6 py-2 text-base font-light	 mr-2 sm:mb-0 mb-3 inline-block rounded-md bg-blue-200 text-blue-600 hover:text-blue-500 hover:shadow-md transition-all	cursor-pointer">
               <i class="fab fa-twitter mr-3"></i> Twitter
@@ -55,11 +55,16 @@
           <img src="../public/assets/img/89160981.png" class="flex lg:hidden mt-12 lg:mt-0 rounded-lg sm:w-1/1 md:w-4/5 lg:w-3/5 mx-auto">
         </div>    
       </div>
-
       </div>
-        
       <!-------Hero end ------->
 
+      <!-------Projects start ------->
+
+      <!-------Projects end ------->
+
+      <!-------Footer start ------->
+
+      <!-------Footer end ------->
 
 
 
@@ -69,6 +74,8 @@
         var myobj = document.getElementById("page-alert");
         myobj.remove();
       }
+      window.localStorage.removeItem('page-alert');
+
       </script>
 	</body>
 </html>
