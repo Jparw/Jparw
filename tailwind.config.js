@@ -1,7 +1,7 @@
 const { plugins } = require("./tailwind-default.config");
 
 module.exports = {
-  purge: [],
+  purge: ["public/index.html"],
   theme:{
     extend: {
       colors: {

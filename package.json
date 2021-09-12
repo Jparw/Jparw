@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "prod": "NODE_ENV=production postcss src/styles.css -o public/styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "tailwindcss": "^2.2.8"
+  },
+  "devDependencies": {
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
   }
 }
